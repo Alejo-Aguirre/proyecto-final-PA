@@ -5,12 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bc8b336f-cb2d-4c7f-a277-02412142f29a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/web/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/java/co/edu/uniquinidio/proyecto/WebApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/java/co/edu/uniquinidio/proyecto/bean/InicioBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/webapp/index.xhtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,6 +19,7 @@
       <list>
         <option value="Enum" />
         <option value="Interface" />
+        <option value="HTML File" />
         <option value="Class" />
       </list>
     </option>
@@ -72,6 +70,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
     "RequestMappingsPanelOrder0": "0",
     "RequestMappingsPanelOrder1": "1",
     "RequestMappingsPanelWidth0": "75",
@@ -84,7 +83,7 @@
     "extract.method.default.visibility": "private",
     "jdk.selected.JAVA_MODULE": "corretto-11",
     "last_directory_selection": "/home/escanor/Documentos/workspaces-2023-1/default-inellej/uniMarket/negocio/src/main/java/co/edu/uniquindio/proyecto",
-    "last_opened_file_path": "C:/Users/lenovo/Desktop/new programas eclipse/Proyecto-uniMarket",
+    "last_opened_file_path": "C:/Users/lenovo/Desktop/new programas eclipse/proyecto-final-PA",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -93,8 +92,8 @@
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "preferences.editor",
-    "spring.configuration.checksum": "e8b48a4ec68ffad340e6d0a8f82c1366",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "spring.configuration.checksum": "02b7bdbb6e472b4a0c4d40ccc19cf93c",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -113,23 +112,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.CategoriaServicioTest.listarCategoriasTest">
-    <configuration name="CategoriaServicioTest.buscarCategoriaPorCodigoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="negocio" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="co.edu.uniquindio.proyecto.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="co.edu.uniquindio.proyecto.test" />
-      <option name="MAIN_CLASS_NAME" value="co.edu.uniquindio.proyecto.test.CategoriaServicioTest" />
-      <option name="METHOD_NAME" value="buscarCategoriaPorCodigoTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Spring Boot.WebApplication">
     <configuration name="CategoriaServicioTest.eliminarCategoriaTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="negocio" />
       <extension name="coverage">
@@ -162,52 +145,63 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CategoriaServicioTest.registrarcategoria" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="NegocioApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="negocio" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="co.edu.uniquindio.proyecto.NegocioApplication" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="co.edu.uniquindio.proyecto.test.*" />
+          <option name="PATTERN" value="co.edu.uniquindio.proyecto.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="co.edu.uniquindio.proyecto.test" />
-      <option name="MAIN_CLASS_NAME" value="co.edu.uniquindio.proyecto.test.CategoriaServicioTest" />
-      <option name="METHOD_NAME" value="registrarcategoria" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ProductoServicioTest.registrarProducto" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="negocio" />
+    <configuration name="PersistenciaApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="persistencia" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="co.edu.uniquindio.proyecto.PersistenciaApplication" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="co.edu.uniquindio.proyecto.test.*" />
+          <option name="PATTERN" value="co.edu.uniquindio.proyecto.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="co.edu.uniquindio.proyecto.test" />
-      <option name="MAIN_CLASS_NAME" value="co.edu.uniquindio.proyecto.test.ProductoServicioTest" />
-      <option name="METHOD_NAME" value="registrarProducto" />
-      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WebApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" singleton="false" temporary="true" nameIsGenerated="true">
+      <module name="web" />
+      <selectedOptions>
+        <option name="environmentVariables" />
+      </selectedOptions>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="co.edu.uniquinidio.proyecto.WebApplication" />
+      <option name="WORKING_DIRECTORY" value="file://$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="co.edu.uniquinidio.proyecto.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.CategoriaServicioTest.buscarCategoriaPorCodigoTest" />
       <item itemvalue="JUnit.CategoriaServicioTest.eliminarCategoriaTest" />
       <item itemvalue="JUnit.CategoriaServicioTest.listarCategoriasTest" />
-      <item itemvalue="JUnit.CategoriaServicioTest.registrarcategoria" />
-      <item itemvalue="JUnit.ProductoServicioTest.registrarProducto" />
+      <item itemvalue="Spring Boot.NegocioApplication" />
+      <item itemvalue="Spring Boot.PersistenciaApplication" />
+      <item itemvalue="Spring Boot.WebApplication" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.WebApplication" />
+        <item itemvalue="Spring Boot.NegocioApplication" />
+        <item itemvalue="Spring Boot.PersistenciaApplication" />
         <item itemvalue="JUnit.CategoriaServicioTest.listarCategoriasTest" />
         <item itemvalue="JUnit.CategoriaServicioTest.eliminarCategoriaTest" />
-        <item itemvalue="JUnit.CategoriaServicioTest.registrarcategoria" />
-        <item itemvalue="JUnit.CategoriaServicioTest.buscarCategoriaPorCodigoTest" />
-        <item itemvalue="JUnit.ProductoServicioTest.registrarProducto" />
       </list>
     </recent_temporary>
   </component>
@@ -251,7 +245,8 @@
       <workItem from="1682569999353" duration="9666000" />
       <workItem from="1684373489628" duration="49000" />
       <workItem from="1684378263657" duration="4640000" />
-      <workItem from="1684385594648" duration="935000" />
+      <workItem from="1684385594648" duration="1220000" />
+      <workItem from="1684437640281" duration="3040000" />
     </task>
     <task id="LOCAL-00001" summary="servicos de moderador , nota : se quito la cedula de la clase persona,se modifico el archivo usuariossql borrando las cedulas y se probaron los test nuevamente para corroborar la funcionalidad">
       <created>1682501406341</created>
@@ -274,7 +269,14 @@
       <option name="project" value="LOCAL" />
       <updated>1684379627082</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Web al 15%">
+      <created>1684386789331</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1684386789331</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -284,7 +286,8 @@
     <MESSAGE value="servicos de moderador , nota : se quito la cedula de la clase persona,se modifico el archivo usuariossql borrando las cedulas y se probaron los test nuevamente para corroborar la funcionalidad" />
     <MESSAGE value="servicos de compra crud y una consulta" />
     <MESSAGE value="cambios producto" />
-    <option name="LAST_COMMIT_MESSAGE" value="cambios producto" />
+    <MESSAGE value="Web al 15%" />
+    <option name="LAST_COMMIT_MESSAGE" value="Web al 15%" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
