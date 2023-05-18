@@ -5,16 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bc8b336f-cb2d-4c7f-a277-02412142f29a" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_25_04_23,_6_24_p_ m__[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_25_04_23__6_24_p__m___Changes_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_26_04_23,_3_11_p_ m__[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_26_04_23,_3_42_p_ m__[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_26_04_23__3_11_p__m___Changes_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_26_04_23__3_42_p__m___Changes_.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/negocio/src/main/java/co/edu/uniquindio/proyecto/servicios/CategoriaServicio.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/negocio/src/main/java/co/edu/uniquindio/proyecto/servicios/CategoriaServiciolmpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/negocio/src/test/java/co/edu/uniquindio/proyecto/test/CategoriaServicioTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/negocio/src/main/java/co/edu/uniquindio/proyecto/servicios/ProductoServicio.java" beforeDir="false" afterPath="$PROJECT_DIR$/negocio/src/main/java/co/edu/uniquindio/proyecto/servicios/ProductoServicio.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/negocio/src/main/java/co/edu/uniquindio/proyecto/servicios/ProductoServicioImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/negocio/src/main/java/co/edu/uniquindio/proyecto/servicios/ProductoServicioImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/negocio/src/test/java/co/edu/uniquindio/proyecto/test/ProductoServicioTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/negocio/src/test/java/co/edu/uniquindio/proyecto/test/ProductoServicioTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/persistencia/src/main/java/co/edu/uniquindio/proyecto/entidades/Categoria.java" beforeDir="false" afterPath="$PROJECT_DIR$/persistencia/src/main/java/co/edu/uniquindio/proyecto/entidades/Categoria.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/persistencia/src/main/java/co/edu/uniquindio/proyecto/repositorios/CategoriaRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/persistencia/src/main/java/co/edu/uniquindio/proyecto/repositorios/CategoriaRepo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/persistencia/src/main/java/co/edu/uniquindio/proyecto/repositorios/ProductoRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/persistencia/src/main/java/co/edu/uniquindio/proyecto/repositorios/ProductoRepo.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -26,8 +23,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -107,6 +104,9 @@
     <key name="CreateClassDialog.RecentsKey">
       <recent name="co.edu.uniquindio.proyecto.servicios" />
     </key>
+    <key name="ExtractSuperBase.RECENT_KEYS">
+      <recent name="co.edu.uniquindio.proyecto.servicios" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="configurationTypes">
@@ -115,8 +115,8 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ProductoServicioTest.registrarProducto">
-    <configuration name="CompraServicioTest.registrarCompraTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.CategoriaServicioTest.listarCategoriasTest">
+    <configuration name="CategoriaServicioTest.buscarCategoriaPorCodigoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="negocio" />
       <extension name="coverage">
         <pattern>
@@ -125,14 +125,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="co.edu.uniquindio.proyecto.test" />
-      <option name="MAIN_CLASS_NAME" value="co.edu.uniquindio.proyecto.test.CompraServicioTest" />
-      <option name="METHOD_NAME" value="registrarCompraTest" />
+      <option name="MAIN_CLASS_NAME" value="co.edu.uniquindio.proyecto.test.CategoriaServicioTest" />
+      <option name="METHOD_NAME" value="buscarCategoriaPorCodigoTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ProductoServicioTest.obtenerProductoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CategoriaServicioTest.eliminarCategoriaTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="negocio" />
       <extension name="coverage">
         <pattern>
@@ -141,14 +141,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="co.edu.uniquindio.proyecto.test" />
-      <option name="MAIN_CLASS_NAME" value="co.edu.uniquindio.proyecto.test.ProductoServicioTest" />
-      <option name="METHOD_NAME" value="obtenerProductoTest" />
+      <option name="MAIN_CLASS_NAME" value="co.edu.uniquindio.proyecto.test.CategoriaServicioTest" />
+      <option name="METHOD_NAME" value="eliminarCategoriaTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ProductoServicioTest.publicarProductoVentaTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CategoriaServicioTest.listarCategoriasTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="negocio" />
       <extension name="coverage">
         <pattern>
@@ -157,8 +157,24 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="co.edu.uniquindio.proyecto.test" />
-      <option name="MAIN_CLASS_NAME" value="co.edu.uniquindio.proyecto.test.ProductoServicioTest" />
-      <option name="METHOD_NAME" value="publicarProductoVentaTest" />
+      <option name="MAIN_CLASS_NAME" value="co.edu.uniquindio.proyecto.test.CategoriaServicioTest" />
+      <option name="METHOD_NAME" value="listarCategoriasTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CategoriaServicioTest.registrarcategoria" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="negocio" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="co.edu.uniquindio.proyecto.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="co.edu.uniquindio.proyecto.test" />
+      <option name="MAIN_CLASS_NAME" value="co.edu.uniquindio.proyecto.test.CategoriaServicioTest" />
+      <option name="METHOD_NAME" value="registrarcategoria" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -180,33 +196,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="NegocioApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="negocio" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="co.edu.uniquindio.proyecto.NegocioApplication" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="co.edu.uniquindio.proyecto.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
-      <item itemvalue="JUnit.ProductoServicioTest.obtenerProductoTest" />
-      <item itemvalue="JUnit.ProductoServicioTest.publicarProductoVentaTest" />
+      <item itemvalue="JUnit.CategoriaServicioTest.buscarCategoriaPorCodigoTest" />
+      <item itemvalue="JUnit.CategoriaServicioTest.eliminarCategoriaTest" />
+      <item itemvalue="JUnit.CategoriaServicioTest.listarCategoriasTest" />
+      <item itemvalue="JUnit.CategoriaServicioTest.registrarcategoria" />
       <item itemvalue="JUnit.ProductoServicioTest.registrarProducto" />
-      <item itemvalue="JUnit.CompraServicioTest.registrarCompraTest" />
-      <item itemvalue="Spring Boot.NegocioApplication" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CategoriaServicioTest.listarCategoriasTest" />
+        <item itemvalue="JUnit.CategoriaServicioTest.eliminarCategoriaTest" />
+        <item itemvalue="JUnit.CategoriaServicioTest.registrarcategoria" />
+        <item itemvalue="JUnit.CategoriaServicioTest.buscarCategoriaPorCodigoTest" />
         <item itemvalue="JUnit.ProductoServicioTest.registrarProducto" />
-        <item itemvalue="JUnit.ProductoServicioTest.publicarProductoVentaTest" />
-        <item itemvalue="JUnit.CompraServicioTest.registrarCompraTest" />
-        <item itemvalue="JUnit.ProductoServicioTest.obtenerProductoTest" />
-        <item itemvalue="Spring Boot.NegocioApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -249,7 +252,7 @@
       <workItem from="1682546910968" duration="14348000" />
       <workItem from="1682569999353" duration="9666000" />
       <workItem from="1684373489628" duration="49000" />
-      <workItem from="1684378263657" duration="1106000" />
+      <workItem from="1684378263657" duration="4640000" />
     </task>
     <task id="LOCAL-00001" summary="servicos de moderador , nota : se quito la cedula de la clase persona,se modifico el archivo usuariossql borrando las cedulas y se probaron los test nuevamente para corroborar la funcionalidad">
       <created>1682501406341</created>
@@ -265,7 +268,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682579782227</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="cambios producto">
+      <created>1684379627082</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1684379627082</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -274,7 +284,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="servicos de moderador , nota : se quito la cedula de la clase persona,se modifico el archivo usuariossql borrando las cedulas y se probaron los test nuevamente para corroborar la funcionalidad" />
     <MESSAGE value="servicos de compra crud y una consulta" />
-    <option name="LAST_COMMIT_MESSAGE" value="servicos de compra crud y una consulta" />
+    <MESSAGE value="cambios producto" />
+    <option name="LAST_COMMIT_MESSAGE" value="cambios producto" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

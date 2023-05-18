@@ -35,5 +35,8 @@ public class Categoria implements Serializable {
     //entidad inversa
 
 
-
+    public Categoria(String codigo, String nombre) {
+        this.codigo = codigo;
+        this.nombre = nombre;
+    }
 }

@@ -88,7 +88,6 @@ public class ProductoServicioTest {
         LocalDate ld = LocalDate.of(2024,1,8);
         Producto p = new Producto("2","televisor","televisor smart tv",400000,ldn,ld,20);
 
-
         try {
             usuarioServicio.registrarUsuario(u);
             productoServicio.registrarProducto(p);
