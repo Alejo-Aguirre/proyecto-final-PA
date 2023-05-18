@@ -23,11 +23,9 @@ public interface ProductoServicio {
     void eliminarProductofavorito(Producto producto,Usuario usuario)throws Exception;
     void comprarProductos(DetalleCompra detalleCompra,Producto producto);
 
-     List<Producto> buscarProducto(String nombre, String [] producto);
+    List<Producto> buscarProductoPorNombre(String nombre, String [] producto);
 
-     List<Producto> listarProductos(String codigoUsuario)throws Exception;
+    List<Producto> buscarProducto(String nombre, String[] producto);
 
-
-
-
+    List<Producto> listarProductos(String codigoUsuario)throws Exception;
 }

@@ -4,7 +4,6 @@ import co.edu.uniquindio.proyecto.entidades.*;
 import co.edu.uniquindio.proyecto.repositorios.ComentarioRepo;
 import co.edu.uniquindio.proyecto.repositorios.ProductoRepo;
 import co.edu.uniquindio.proyecto.repositorios.UsuarioRepo;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDate;
@@ -61,11 +60,11 @@ public class ProductoServicioImpl implements ProductoServicio{
     public void eliminarProducto(String codigo) throws Exception {
         Optional<Producto> producto = productoRepo.findById(codigo);
 
-       if (producto.isEmpty()){
-           throw new Exception("No existe ningun producto con ese codigo");
-       }
+        if (producto.isEmpty()){
+            throw new Exception("No existe ningun producto con ese codigo");
+        }
 
-       productoRepo.deleteById(codigo);
+        productoRepo.deleteById(codigo);
     }
 
     @Override
@@ -81,14 +80,14 @@ public class ProductoServicioImpl implements ProductoServicio{
     @Override
     public void comentarProducto(String mensaje, Usuario usuario, Producto producto) throws Exception {
         LocalDate ld = LocalDate.now();
-        Comentario comentario=new Comentario("1",mensaje,ld);
+        Comentario comentario=new Comentario("32",mensaje,ld);
         comentario.setMiUsuario(usuario);
         comentario.setMiProducto(producto);
-    try {
-        comentarioRepo.save(comentario);
-    }catch (Exception e ){
-        e.getMessage();
-    }
+        try {
+            comentarioRepo.save(comentario);
+        }catch (Exception e ){
+            e.getMessage();
+        }
 
 
 
@@ -99,12 +98,13 @@ public class ProductoServicioImpl implements ProductoServicio{
     @Override
     public void guardarProductoEnFavoritos(Producto producto, Usuario usuario) throws Exception {
 
+        if (producto==null || usuario==null){
+            throw new Exception("el producto o el usuario son nulos ");
+        }
 
+        producto.getUsuariosFavoritos().add(usuario);
+        usuario.getProductosFavoritos().add(producto);
 
-        List<Producto> favoritos = usuarioRepo.obtenerFavoritosPorCodigo(usuario.getCodigo());
-        List<Usuario>  usuariosFavoritos = productoRepo.obtenerUsuariosFavoritosPorCodigo(producto.getCodigo());
-        favoritos.add(producto);
-        usuariosFavoritos.add(usuario);
         productoRepo.save(producto);
         usuarioRepo.save(usuario);
 
@@ -112,15 +112,27 @@ public class ProductoServicioImpl implements ProductoServicio{
 
     @Override
     public void eliminarProductofavorito(Producto producto, Usuario usuario) throws Exception {
-        List<Producto> favoritos = usuarioRepo.obtenerFavoritosPorCodigo(usuario.getCodigo());
-        favoritos.remove(producto);
+        if (producto==null || usuario==null){
+            throw new Exception("el producto o el usuario son nulos ");
+        }
 
+        producto.getUsuariosFavoritos().remove(usuario);
+        usuario.getProductosFavoritos().remove(producto);
+
+        productoRepo.save(producto);
         usuarioRepo.save(usuario);
+
     }
 
     @Override
     public void comprarProductos(DetalleCompra detalleCompra, Producto producto) {
 
+    }
+
+    @Override
+    public List<Producto> buscarProductoPorNombre(String nombre, String[] producto) {
+
+        return productoRepo.buscarProductoNombre(nombre);
     }
 
     @Override
