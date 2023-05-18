@@ -9,6 +9,7 @@ https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modules>
         <module>persistencia</module>
         <module>negocio</module>
+        <module>web</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
