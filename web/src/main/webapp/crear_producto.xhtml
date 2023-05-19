@@ -11,34 +11,49 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Mi primera imagen</title>
+    <style type="text/css">
+        .center-button {
+            text-align: center;
+            margin-top: 20px; /* Añade un margen superior para separar el botón del resto de los campos */
+        }
+    </style>
 </h:head>
 <h:body>
-    <p:panel header="Crear Producto" >
+    <p:panel header="Crear Producto">
         <h:form>
-            <h:panelGrid columns="2" cellpadding="5" >
-                <p:outputLabel value="Codigo" for="codigo_u" />
+            <h:panelGrid columns="2" cellpadding="5">
+                <p:outputLabel value="Seleccione la categoría" for="categoria_p"/>
+                <p:selectOneMenu id="categoria_p" value="#{productoBean.codigoCategoriaSeleccionada}">
+                    <f:selectItem itemLabel="Seleccionar" itemValue=""/>
+                    <f:selectItems value="#{productoBean.categorias}" var="categoria" itemValue="#{categoria.codigo}" itemLabel="#{categoria.nombre}"/>
+                </p:selectOneMenu>
+
+                <p:outputLabel value="Codigo" for="codigo_u"/>
                 <p:inputText id="codigo_u" value="#{productoBean.producto.codigo}" required="true"/>
 
-                <p:outputLabel value="Nombre" for="nombre_p" />
+                <p:outputLabel value="Nombre" for="nombre_p"/>
                 <p:inputText id="nombre_p" value="#{productoBean.producto.nombre}" required="true"/>
 
-                <p:outputLabel value="Descripcion" for="descripcion_p" />
-                <p:textEditor id="descripcion_p" value="#{productoBean.producto.descripcion}" height="200" secure="false"/>
 
-
-                <p:outputLabel value="Precio" for="precio_p" />
-                <p:inputText id="precio_p" value="#{productoBean.producto.precio}" required="false" type="number"/>
-
-                <p:outputLabel value="Unidades" for="unidades_p" />
+                <p:outputLabel value="Unidades" for="unidades_p"/>
                 <p:inputText id="unidades_p" value="#{productoBean.producto.unidades}" required="true" type="number"/>
 
-                <p:outputLabel value="Fecha Limite" for="fecha_limite_p" />
-                <p:datePicker id="fecha_limite_p" value="#{productoBean.producto.fechaLimite}" required="true" />
+                <p:outputLabel value="Precio" for="precio_p"/>
+                <p:inputText id="precio_p" value="#{productoBean.producto.precio}" required="false" type="number"/>
 
+
+                <p:outputLabel value="Fecha Limite" for="fecha_limite_p"/>
+                <p:datePicker id="fecha_limite_p" value="#{productoBean.producto.fechaLimite}" required="true"/>
+
+                <p:outputLabel value="Descripcion" for="descripcion_p"/>
+                <p:textEditor id="descripcion_p" value="#{productoBean.producto.descripcion}" height="200" secure="false"/>
+
+                <h:outputText styleClass="center-button" colspan="2"/>
+                <p:commandButton value="Crear producto" action="#{productoBean.crearProducto()}" update="@form" icon="pi pi-user-plus"
+                                 styleClass="center-button"/>
             </h:panelGrid>
 
-            <p:growl  showDetail="true" />
-            <p:commandButton value="Crear producto" action="#{productoBean.crearProducto()}" update="@form" icon="pi pi-user-plus"/>
+            <p:growl showDetail="true"/>
         </h:form>
     </p:panel>
 </h:body>
