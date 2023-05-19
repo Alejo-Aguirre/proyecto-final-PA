@@ -16,7 +16,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNull;
 
 @SpringBootTest(classes = NegocioApplication.class)
-@Transactional
+
 public class CategoriaServicioTest {
     @Autowired
     CategoriaServicio categoriaServicio;
