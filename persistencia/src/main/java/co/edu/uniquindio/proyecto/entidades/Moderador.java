@@ -25,8 +25,8 @@ public class Moderador extends Persona implements Serializable {
     @OneToMany(mappedBy ="miModerador")
    private List<ProductoModerador> misProductosModerador;
 
-    public Moderador(String codigo, @Length(max = 150) String nombre, @Email String email, String password) {
-        super(codigo, nombre, email, password);
+    public Moderador(String codigo, @Length(max = 150) String nombre, @Email String email, String username, String password) {
+        super(codigo, nombre, email, username, password);
     }
 
 

@@ -16,10 +16,6 @@ import java.util.List;
 @ToString(callSuper = true)
 public class Usuario extends Persona implements Serializable {
 
-
-    @Column(nullable = false,length = 20,unique = true)
-    private String username;
-
     @Column(nullable = false,length = 150)
     private String direccion;
 
@@ -46,9 +42,8 @@ public class Usuario extends Persona implements Serializable {
      @OneToMany(mappedBy = "miUsuario")
      private List<Compra> misCompras;
 
-    public Usuario(String codigo, @Length(max = 150) String nombre, @Email String email, String telefono, String direccion , String username,String password) {
-        super(codigo, nombre, email, password);
-        this.username = username;
+    public Usuario(String codigo, @Length(max = 150) String nombre, @Email String email, String username, String password, String direccion, String telefono) {
+        super(codigo, nombre, email, username, password);
         this.direccion = direccion;
         this.telefono = telefono;
     }

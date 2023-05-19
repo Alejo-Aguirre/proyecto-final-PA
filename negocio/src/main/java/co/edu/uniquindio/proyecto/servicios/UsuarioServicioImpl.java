@@ -1,11 +1,17 @@
 package co.edu.uniquindio.proyecto.servicios;
 
 import co.edu.uniquindio.proyecto.entidades.Usuario;
+import lombok.AllArgsConstructor;
+import org.springframework.beans.factory.annotation.Autowired;
 import co.edu.uniquindio.proyecto.repositorios.UsuarioRepo;
+import org.springframework.stereotype.Repository;
 import org.springframework.stereotype.Service;
+
 
 import java.util.List;
 import java.util.Optional;
+
+
 
 @Service
 public class UsuarioServicioImpl implements UsuarioServicio{
@@ -13,8 +19,8 @@ public class UsuarioServicioImpl implements UsuarioServicio{
 
     public UsuarioServicioImpl(UsuarioRepo usuarioRepo) {
         this.usuarioRepo = usuarioRepo;
-    }
 
+    }
     @Override
     public Usuario registrarUsuario(Usuario u) throws Exception {
 
