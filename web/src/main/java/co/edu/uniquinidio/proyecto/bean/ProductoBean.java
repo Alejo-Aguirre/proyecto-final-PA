@@ -51,11 +51,8 @@ public class ProductoBean implements Serializable {
             producto.setMiUsuario(usuarioServicio.obtenerUsuario("123"));
 
             // Obtener la categoría seleccionada por su código
-
-            // Obtener la categoría seleccionada por su código
             Categoria categoriaSeleccionada = categoriaServicio.obtenerCategoria(codigoCategoriaSeleccionada);
             producto.setMiCategoria(categoriaSeleccionada);
-
             producto.setFechaCreacion(ldn);
             productoServicio.registrarProducto(producto);
             FacesMessage msg = new FacesMessage(FacesMessage.SEVERITY_INFO,"Alerta","La creacion del producto fue exitosa");

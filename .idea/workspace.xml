@@ -5,9 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bc8b336f-cb2d-4c7f-a277-02412142f29a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/web/src/main/java/co/edu/uniquinidio/proyecto/bean/BusquedaBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/java/co/edu/uniquinidio/proyecto/bean/CategoriaBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/webapp/resultados_busqueda.xhtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/src/main/java/co/edu/uniquinidio/proyecto/bean/ProductoBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/co/edu/uniquinidio/proyecto/bean/ProductoBean.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/webapp/crear_producto.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/webapp/crear_producto.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/main/webapp/index.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/webapp/index.xhtml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -219,7 +222,7 @@
       <workItem from="1684437640281" duration="9659000" />
       <workItem from="1684447386472" duration="360000" />
       <workItem from="1684524523775" duration="1278000" />
-      <workItem from="1684525892242" duration="7479000" />
+      <workItem from="1684525892242" duration="17004000" />
     </task>
     <task id="LOCAL-00001" summary="servicos de moderador , nota : se quito la cedula de la clase persona,se modifico el archivo usuariossql borrando las cedulas y se probaron los test nuevamente para corroborar la funcionalidad">
       <created>1682501406341</created>
@@ -270,7 +273,14 @@
       <option name="project" value="LOCAL" />
       <updated>1684531798152</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="el usuario ya puede seleccionar la categoria en la que desea crear el producto">
+      <created>1684533873669</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1684533873669</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -284,7 +294,8 @@
     <MESSAGE value="config jsf completa y funcional" />
     <MESSAGE value="registrar usurio funcional con la base de datos" />
     <MESSAGE value="crear producto lista faltaria que el usuario al crear pueda seleccionar la categoria" />
-    <option name="LAST_COMMIT_MESSAGE" value="crear producto lista faltaria que el usuario al crear pueda seleccionar la categoria" />
+    <MESSAGE value="el usuario ya puede seleccionar la categoria en la que desea crear el producto" />
+    <option name="LAST_COMMIT_MESSAGE" value="el usuario ya puede seleccionar la categoria en la que desea crear el producto" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
