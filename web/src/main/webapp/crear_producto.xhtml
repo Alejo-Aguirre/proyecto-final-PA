@@ -48,6 +48,10 @@
                 <p:outputLabel value="Descripcion" for="descripcion_p"/>
                 <p:textEditor id="descripcion_p" value="#{productoBean.producto.descripcion}" height="200" secure="false"/>
 
+                <p:outputLabel for="imagen" value="Cargar imagenes :"/>
+                <p:fileUpload id="imagen" listener="#{productoBean.subirImagenes}" mode="advanced" multiple="true" sizeLimit="1000000" fileLimit="5" allowTypes="/(\.|\/)(gif|jpe?g|png)$/" required="true"
+                              label="Seleccionar archivo"/>
+
                 <h:outputText styleClass="center-button" colspan="2"/>
                 <p:commandButton value="Crear producto" action="#{productoBean.crearProducto()}" update="@form" icon="pi pi-user-plus"
                                  styleClass="center-button"/>

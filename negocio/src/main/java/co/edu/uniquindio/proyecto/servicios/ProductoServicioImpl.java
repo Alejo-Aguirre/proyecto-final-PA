@@ -144,4 +144,9 @@ public class ProductoServicioImpl implements ProductoServicio{
     public List<Producto> listarProductos(String codigoUsuario) throws Exception {
         return null;
     }
+
+    @Override
+    public List<Producto> obtenerProductosPorCategoria(String categoriaSeleccionada) {
+        return productoRepo.obtenerProductosPorCategoria(categoriaSeleccionada);
+    }
 }

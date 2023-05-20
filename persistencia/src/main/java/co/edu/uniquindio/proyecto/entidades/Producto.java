@@ -51,10 +51,8 @@ public class Producto implements Serializable {
     private Usuario miUsuario;
     //entidad propietaria
 
-
-    @ToString.Exclude
-    @OneToMany(mappedBy = "miProducto")
-    private List<Imagen> misImagens;
+    @ElementCollection
+    private List<String> imagenes;
 
     @ToString.Exclude
     @ManyToOne

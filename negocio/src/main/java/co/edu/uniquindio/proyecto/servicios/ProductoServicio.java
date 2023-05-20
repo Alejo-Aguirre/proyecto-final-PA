@@ -28,4 +28,6 @@ public interface ProductoServicio {
     List<Producto> buscarProducto(String nombre, String[] producto);
 
     List<Producto> listarProductos(String codigoUsuario)throws Exception;
+
+    List<Producto> obtenerProductosPorCategoria(String categoriaSeleccionada);
 }

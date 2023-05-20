@@ -7,6 +7,7 @@ import co.edu.uniquindio.proyecto.entidades.SubCategoria;
 import co.edu.uniquindio.proyecto.entidades.Usuario;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
+import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
 
 import java.time.LocalDateTime;
@@ -54,6 +55,10 @@ public interface ProductoRepo extends JpaRepository<Producto,String>{
 
     @Query("select p from Producto p where p.nombre like concat('%',:nombre,'%')")
     List<Producto> buscarProductoNombre(String nombre);
+
+
+    @Query("SELECT p FROM Producto p WHERE p.miCategoria.nombre = :categoria")
+    List<Producto> obtenerProductosPorCategoria(@Param("categoria") String categoria);
 
 
 

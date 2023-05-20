@@ -5,11 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bc8b336f-cb2d-4c7f-a277-02412142f29a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/web/src/main/java/co/edu/uniquinidio/proyecto/bean/BusquedaBean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/java/co/edu/uniquinidio/proyecto/bean/CategoriaBean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/webapp/resultados_busqueda.xhtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/webapp/productos.xhtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/negocio/src/main/java/co/edu/uniquindio/proyecto/servicios/ProductoServicio.java" beforeDir="false" afterPath="$PROJECT_DIR$/negocio/src/main/java/co/edu/uniquindio/proyecto/servicios/ProductoServicio.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/negocio/src/main/java/co/edu/uniquindio/proyecto/servicios/ProductoServicioImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/negocio/src/main/java/co/edu/uniquindio/proyecto/servicios/ProductoServicioImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/negocio/src/test/java/co/edu/uniquindio/proyecto/test/CategoriaServicioTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/negocio/src/test/java/co/edu/uniquindio/proyecto/test/CategoriaServicioTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/persistencia/src/main/java/co/edu/uniquindio/proyecto/entidades/Producto.java" beforeDir="false" afterPath="$PROJECT_DIR$/persistencia/src/main/java/co/edu/uniquindio/proyecto/entidades/Producto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/persistencia/src/main/java/co/edu/uniquindio/proyecto/repositorios/ProductoRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/persistencia/src/main/java/co/edu/uniquindio/proyecto/repositorios/ProductoRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/src/main/java/co/edu/uniquinidio/proyecto/bean/ProductoBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/co/edu/uniquinidio/proyecto/bean/ProductoBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/main/webapp/crear_producto.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/webapp/crear_producto.xhtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/src/main/webapp/index.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/webapp/index.xhtml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -222,7 +228,7 @@
       <workItem from="1684437640281" duration="9659000" />
       <workItem from="1684447386472" duration="360000" />
       <workItem from="1684524523775" duration="1278000" />
-      <workItem from="1684525892242" duration="17004000" />
+      <workItem from="1684525892242" duration="23315000" />
     </task>
     <task id="LOCAL-00001" summary="servicos de moderador , nota : se quito la cedula de la clase persona,se modifico el archivo usuariossql borrando las cedulas y se probaron los test nuevamente para corroborar la funcionalidad">
       <created>1682501406341</created>
@@ -280,7 +286,14 @@
       <option name="project" value="LOCAL" />
       <updated>1684533873669</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Desplegable de categorias">
+      <created>1684543223257</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1684543223257</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -295,7 +308,8 @@
     <MESSAGE value="registrar usurio funcional con la base de datos" />
     <MESSAGE value="crear producto lista faltaria que el usuario al crear pueda seleccionar la categoria" />
     <MESSAGE value="el usuario ya puede seleccionar la categoria en la que desea crear el producto" />
-    <option name="LAST_COMMIT_MESSAGE" value="el usuario ya puede seleccionar la categoria en la que desea crear el producto" />
+    <MESSAGE value="Desplegable de categorias" />
+    <option name="LAST_COMMIT_MESSAGE" value="Desplegable de categorias" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
