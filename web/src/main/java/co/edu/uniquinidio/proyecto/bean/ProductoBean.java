@@ -24,6 +24,7 @@ import java.io.FileOutputStream;
 import java.io.OutputStream;
 import java.io.Serializable;
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -70,6 +71,7 @@ public class ProductoBean implements Serializable {
                 Categoria categoriaSeleccionada = categoriaServicio.obtenerCategoria(codigoCategoriaSeleccionada);
                 producto.setMiCategoria(categoriaSeleccionada);
                 producto.setImagenes(imagenes);
+                producto.setFechaLimite(LocalDate.from(LocalDateTime.now().plusMonths(2)));
                 producto.setFechaCreacion(ldn);
                 productoServicio.registrarProducto(producto);
                 FacesMessage msg = new FacesMessage(FacesMessage.SEVERITY_INFO,"Alerta","La creacion del producto fue exitosa");
