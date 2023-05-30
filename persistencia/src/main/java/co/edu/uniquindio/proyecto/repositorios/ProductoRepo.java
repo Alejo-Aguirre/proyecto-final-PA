@@ -1,10 +1,7 @@
 package co.edu.uniquindio.proyecto.repositorios;
 
 import co.edu.uniquindio.proyecto.DTO.ProductoValido;
-import co.edu.uniquindio.proyecto.entidades.Imagen;
-import co.edu.uniquindio.proyecto.entidades.Producto;
-import co.edu.uniquindio.proyecto.entidades.SubCategoria;
-import co.edu.uniquindio.proyecto.entidades.Usuario;
+import co.edu.uniquindio.proyecto.entidades.*;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
@@ -34,6 +31,8 @@ public interface ProductoRepo extends JpaRepository<Producto,String>{
     List<Usuario> listarUsuariosQueComentaronProducto(String codigo);
 
 
+    @Query("SELECT p FROM Producto p WHERE :categoria = p.miCategoria")
+    List<Producto> listarPorCategoria(@Param("categoria") Categoria categoria);
 
 
     @Query("SELECT p.codigo, p.nombre, COUNT(c.mensaje) FROM Producto p LEFT JOIN p.miComentario c GROUP BY p.codigo, p.nombre ORDER BY COUNT(c.mensaje) DESC")

@@ -70,6 +70,12 @@ public class Producto implements Serializable {
         this.fechaLimite = fechaLimite;
         this.unidades = unidades;
     }
+    public String getImagenPrincipal(){
+        if(imagenes != null && !imagenes.isEmpty()){
+            return imagenes.get(0);
+        }
+        return  "default.png";
+    }
 
     //entidad Propietaria es el producto porque para hacer un producto necesitamos una categoria
 

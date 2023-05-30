@@ -6,8 +6,12 @@
   <component name="ChangeListManager">
     <list default="true" id="bc8b336f-cb2d-4c7f-a277-02412142f29a" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/java/co/edu/uniquinidio/proyecto/bean/ProductoBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/co/edu/uniquinidio/proyecto/bean/ProductoBean.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/webapp/crear_producto.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/webapp/crear_producto.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/negocio/src/main/java/co/edu/uniquindio/proyecto/servicios/ProductoServicio.java" beforeDir="false" afterPath="$PROJECT_DIR$/negocio/src/main/java/co/edu/uniquindio/proyecto/servicios/ProductoServicio.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/negocio/src/main/java/co/edu/uniquindio/proyecto/servicios/ProductoServicioImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/negocio/src/main/java/co/edu/uniquindio/proyecto/servicios/ProductoServicioImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/persistencia/src/main/java/co/edu/uniquindio/proyecto/entidades/Producto.java" beforeDir="false" afterPath="$PROJECT_DIR$/persistencia/src/main/java/co/edu/uniquindio/proyecto/entidades/Producto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/persistencia/src/main/java/co/edu/uniquindio/proyecto/repositorios/ProductoRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/persistencia/src/main/java/co/edu/uniquindio/proyecto/repositorios/ProductoRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/main/java/co/edu/uniquinidio/proyecto/bean/InicioBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/co/edu/uniquinidio/proyecto/bean/InicioBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/main/webapp/index.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/webapp/index.xhtml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,6 +51,9 @@
       </UrlAndAccount>
     </option>
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/web/src/main/webapp/index.xhtml" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -83,7 +90,7 @@
     "extract.method.default.visibility": "private",
     "jdk.selected.JAVA_MODULE": "corretto-11",
     "last_directory_selection": "/home/escanor/Documentos/workspaces-2023-1/default-inellej/uniMarket/negocio/src/main/java/co/edu/uniquindio/proyecto",
-    "last_opened_file_path": "C:/Users/lenovo/Desktop/new programas eclipse/proyecto-final-PA/web/src/main/webapp",
+    "last_opened_file_path": "C:/Users/lenovo/Desktop/new programas eclipse/proyecto-final-PA",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -103,6 +110,9 @@
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\lenovo\Desktop\new programas eclipse\proyecto-final-PA\web\src\main\webapp" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\lenovo\Desktop\new programas eclipse\proyecto-final-PA\web\src\main\webapp\uploads" />
     </key>
     <key name="ExtractSuperBase.RECENT_KEYS">
       <recent name="co.edu.uniquindio.proyecto.servicios" />
@@ -219,7 +229,12 @@
       <workItem from="1684437640281" duration="9659000" />
       <workItem from="1684447386472" duration="360000" />
       <workItem from="1684524523775" duration="1278000" />
-      <workItem from="1684525892242" duration="24636000" />
+      <workItem from="1684525892242" duration="25488000" />
+      <workItem from="1684615021898" duration="1389000" />
+      <workItem from="1684617357703" duration="989000" />
+      <workItem from="1684812850237" duration="1048000" />
+      <workItem from="1684887994890" duration="24000" />
+      <workItem from="1685476124255" duration="7118000" />
     </task>
     <task id="LOCAL-00001" summary="servicos de moderador , nota : se quito la cedula de la clase persona,se modifico el archivo usuariossql borrando las cedulas y se probaron los test nuevamente para corroborar la funcionalidad">
       <created>1682501406341</created>
@@ -298,7 +313,14 @@
       <option name="project" value="LOCAL" />
       <updated>1684549889569</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="fecha limite 2 meses">
+      <created>1684551392284</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1684551392285</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -316,7 +338,8 @@
     <MESSAGE value="Desplegable de categorias" />
     <MESSAGE value="subir imagenes funcional" />
     <MESSAGE value="subir imagenes funcional,se actualiza el git ignore" />
-    <option name="LAST_COMMIT_MESSAGE" value="subir imagenes funcional,se actualiza el git ignore" />
+    <MESSAGE value="fecha limite 2 meses" />
+    <option name="LAST_COMMIT_MESSAGE" value="fecha limite 2 meses" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -16,6 +16,7 @@ public interface ProductoServicio {
 
     Producto obtenerProducto(String codigo) throws Exception;
     List<Producto> listarProductosPorCategoria(Categoria categoria);
+    List<Producto> listarTodosProductos()throws Exception;
 
     void comentarProducto(String mensaje,Usuario usuario,Producto producto) throws Exception;
 
@@ -28,6 +29,7 @@ public interface ProductoServicio {
     List<Producto> buscarProducto(String nombre, String[] producto);
 
     List<Producto> listarProductos(String codigoUsuario)throws Exception;
+
 
     List<Producto> obtenerProductosPorCategoria(String categoriaSeleccionada);
 }

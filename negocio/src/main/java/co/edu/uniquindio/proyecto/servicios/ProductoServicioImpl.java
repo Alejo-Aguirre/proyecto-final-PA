@@ -74,7 +74,12 @@ public class ProductoServicioImpl implements ProductoServicio{
 
     @Override
     public List<Producto> listarProductosPorCategoria(Categoria categoria) {
-        return null;
+        return productoRepo.listarPorCategoria(categoria);
+    }
+
+    @Override
+    public List<Producto> listarTodosProductos() throws Exception {
+        return productoRepo.findAll();
     }
 
     @Override
