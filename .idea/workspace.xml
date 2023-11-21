@@ -5,9 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bc8b336f-cb2d-4c7f-a277-02412142f29a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/web/src/main/webapp/Resources/CSS/styles.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/webapp/index.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/webapp/index.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/negocio/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/negocio/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/persistencia/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/persistencia/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/main/webapp/resultados_busqueda.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/webapp/resultados_busqueda.xhtml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -125,22 +127,56 @@
     </option>
   </component>
   <component name="RunManager" selected="Spring Boot.WebApplication">
-    <configuration name="NegocioApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+    <configuration name="CategoriaServicioTest.registrarcategoria" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="negocio" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="co.edu.uniquindio.proyecto.NegocioApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="co.edu.uniquindio.proyecto.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="co.edu.uniquindio.proyecto.test" />
+      <option name="MAIN_CLASS_NAME" value="co.edu.uniquindio.proyecto.test.CategoriaServicioTest" />
+      <option name="METHOD_NAME" value="registrarcategoria" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CategoriaTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="persistencia" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="co.edu.uniquindio.proyecto.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="co.edu.uniquindio.proyecto" />
+      <option name="MAIN_CLASS_NAME" value="co.edu.uniquindio.proyecto.CategoriaTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PersistenciaApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+    <configuration name="CategoriaTest.crearCategoria" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="persistencia" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="co.edu.uniquindio.proyecto.PersistenciaApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="co.edu.uniquindio.proyecto.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="co.edu.uniquindio.proyecto" />
+      <option name="MAIN_CLASS_NAME" value="co.edu.uniquindio.proyecto.CategoriaTest" />
+      <option name="METHOD_NAME" value="crearCategoria" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NegocioApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="negocio" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="co.edu.uniquindio.proyecto.NegocioApplication" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="co.edu.uniquindio.proyecto.*" />
@@ -169,15 +205,19 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="JUnit.CategoriaServicioTest.registrarcategoria" />
+      <item itemvalue="JUnit.CategoriaTest" />
+      <item itemvalue="JUnit.CategoriaTest.crearCategoria" />
       <item itemvalue="Spring Boot.NegocioApplication" />
-      <item itemvalue="Spring Boot.PersistenciaApplication" />
       <item itemvalue="Spring Boot.WebApplication" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.WebApplication" />
+        <item itemvalue="JUnit.CategoriaServicioTest.registrarcategoria" />
+        <item itemvalue="JUnit.CategoriaTest" />
+        <item itemvalue="JUnit.CategoriaTest.crearCategoria" />
         <item itemvalue="Spring Boot.NegocioApplication" />
-        <item itemvalue="Spring Boot.PersistenciaApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -230,7 +270,18 @@
       <workItem from="1684617357703" duration="989000" />
       <workItem from="1684812850237" duration="1048000" />
       <workItem from="1684887994890" duration="24000" />
-      <workItem from="1685476124255" duration="8730000" />
+      <workItem from="1685476124255" duration="9679000" />
+      <workItem from="1685556389328" duration="25000" />
+      <workItem from="1685604065782" duration="35000" />
+      <workItem from="1685628733080" duration="778000" />
+      <workItem from="1693424083742" duration="641000" />
+      <workItem from="1696906532086" duration="51000" />
+      <workItem from="1696909205822" duration="22000" />
+      <workItem from="1699157886334" duration="215000" />
+      <workItem from="1699158250573" duration="255000" />
+      <workItem from="1699469407723" duration="3446000" />
+      <workItem from="1699907340145" duration="2679000" />
+      <workItem from="1700538714404" duration="311000" />
     </task>
     <task id="LOCAL-00001" summary="servicos de moderador , nota : se quito la cedula de la clase persona,se modifico el archivo usuariossql borrando las cedulas y se probaron los test nuevamente para corroborar la funcionalidad">
       <created>1682501406341</created>
@@ -323,11 +374,29 @@
       <option name="project" value="LOCAL" />
       <updated>1685483667277</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="data view imagen para los productos">
+      <created>1685485383079</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1685485383079</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="servicos de moderador , nota : se quito la cedula de la clase persona,se modifico el archivo usuariossql borrando las cedulas y se probaron los test nuevamente para corroborar la funcionalidad" />
